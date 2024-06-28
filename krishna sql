@@ -1,0 +1,2 @@
+select "cars","Mpg","Cylinders","weight" from cars order by "Mpg","Cylinders"
+select "cars","Mpg","Cylinders","weight" from cars order by 2,3

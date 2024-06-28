@@ -1,0 +1,23 @@
+create table my_courses("ID"char(3)primary key not null ,
+	"courses"varchar(100)not null ,"fee"integer not null,"duration"integer not null)
+insert into my_courses values ('001','pythonfor everyone',5999,40)
+insert into my_courses values ('002','python advanced developer',11999,NULL)
+INSERT INTO my_courses ("ID","courses","fee") values ('300','python for data science',11999)
+SELECT * FROM my_courses
+select courses from my_courses
+select fee from my_courses where courses ='python advanced developer'
+update my_courses
+set duration=90
+where courses= 'python fro datascience'
+update my_courses
+set duration =90,fee=14999
+where courses ='python advanced developer'
+update my_courses
+set duration= NULL
+select * from my_courses
+delete from my_courses
+where "ID"= '001'
+delete from my_courses
+where fee >6000
+delete from courses
+drop table my_courses
